@@ -1,0 +1,128 @@
+@media screen and (min-width: 800px) {
+    .contenedor {
+        margin: 2% 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr minmax(100, auto) 1fr;
+        /*  coloca aquí tu código  */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .encabezado,
+    .pie-pagina {
+        background: red;
+    }
+    .navegacion {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .contenedor {
+        margin: 2% 2%;
+        display: grid;
+        grid-template-columns: minmax(100px, auto) minmax(100px, auto);
+        grid-template-rows: repeat(4, auto);
+        /*  coloca aquí tu código  */
+    }
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /*  coloca aquí tu código  */
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*  coloca aquí tu códi
+    /*  coloca aquí tu código  */
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /*  coloca aquí tu código  */
+}
+
+aside {
+    /*  coloca aquí tu código  */
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /*  coloca aquí tu código  */
+}
+
+
+/*  */
+
+.contenedor>* {
+    padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .contenedor {
+        color: #989C94;
+        font-family: helvetica, arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        color: #989C94;
+        font-family: helvetica, arial, sans-serif;
+    }
+    aside {}
+}
+
+header {
+    color: white;
+    background: #989C94;
+}
+
+main {
+    background: #E6E49F;
+    color: #25291C;
+}
+
+nav {
+    color: #25291C;
+    background: #E3E7D0;
+}
+
+aside {
+    background: #BDC2BF;
+    color: #25291C;
+}
+
+footer {
+    color: white;
+    background: #25291C;
+}
+
+
+/*  */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
